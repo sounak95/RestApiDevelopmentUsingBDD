@@ -1,0 +1,7 @@
+com\test\project\acceptence\files\resources.class
+com\test\project\acceptence\stepdefinition\MasterHooks.class
+com\test\project\acceptence\runner\TestRunner.class
+com\test\project\acceptence\utils\RestAssuredHelper.class
+com\test\project\acceptence\stepdefinition\apiEndPoints\AddUserSteps.class
+com\test\project\acceptence\utils\ReusableMethods.class
+com\test\project\acceptence\utils\Objects.class

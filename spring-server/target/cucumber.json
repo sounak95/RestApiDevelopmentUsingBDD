@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 358895589,
+              "duration": 318540942,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104174314,
+              "duration": 75607735,
               "status": "passed"
             },
             "line": 12,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 65587,
+              "duration": 51482,
               "status": "passed"
             },
             "line": 13,
@@ -47,24 +47,24 @@
           },
           {
             "result": {
-              "duration": 1561838601,
+              "duration": 1427314753,
               "status": "passed"
             },
             "line": 14,
-            "name": "the Admin User provides details like firstname as \"SS5\", lastname as \"SS5\" and department as \"finance\"",
+            "name": "the Admin User provides details like firstname as \"Michael\", lastname as \"Jackson\" and department as \"Finance\"",
             "match": {
               "arguments": [
                 {
-                  "val": "SS5",
+                  "val": "Michael",
                   "offset": 51
                 },
                 {
-                  "val": "SS5",
-                  "offset": 70
+                  "val": "Jackson",
+                  "offset": 74
                 },
                 {
-                  "val": "finance",
-                  "offset": 94
+                  "val": "Finance",
+                  "offset": 102
                 }
               ],
               "location": "AddUserSteps.the_Admin_User_provides_details_like_firstname_as_lastname_as_and_department_as(String,String,String)"
@@ -78,33 +78,24 @@
           },
           {
             "result": {
-              "duration": 26716724,
+              "duration": 361457929,
               "status": "passed"
             },
             "line": 15,
-            "name": "a User is created",
-            "match": {
-              "location": "AddUserSteps.a_User_is_created()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 617785,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "a message saying \"User successfully created\" is provided",
+            "name": "a User with name \"Michael\" is created successfully",
             "match": {
               "arguments": [
                 {
-                  "val": "User successfully created",
+                  "val": "Michael",
                   "offset": 18
                 }
               ],
-              "location": "AddUserSteps.a_message_saying_is_provided(String)"
+              "location": "AddUserSteps.a_User_with_name_is_created_successfully(String)"
             },
-            "keyword": "And "
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -118,7 +109,7 @@
         "before": [
           {
             "result": {
-              "duration": 238721,
+              "duration": 324407,
               "status": "passed"
             },
             "match": {
@@ -135,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51835,
+              "duration": 74049,
               "status": "passed"
             },
             "line": 23,
@@ -147,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 32441,
+              "duration": 44782,
               "status": "passed"
             },
             "line": 24,
@@ -159,24 +150,24 @@
           },
           {
             "result": {
-              "duration": 24732549,
+              "duration": 29629329,
               "status": "passed"
             },
             "line": 25,
-            "name": "the Admin User provides details like firstname as \"SS5\", lastname as \"null\" and department as \"HR\"",
+            "name": "the Admin User provides details like firstname as \"Jonathan\", lastname as \"null\" and department as \"HR\"",
             "match": {
               "arguments": [
                 {
-                  "val": "SS5",
+                  "val": "Jonathan",
                   "offset": 51
                 },
                 {
                   "val": "null",
-                  "offset": 70
+                  "offset": 75
                 },
                 {
                   "val": "HR",
-                  "offset": 95
+                  "offset": 100
                 }
               ],
               "location": "AddUserSteps.the_Admin_User_provides_details_like_firstname_as_lastname_as_and_department_as(String,String,String)"
@@ -190,19 +181,19 @@
           },
           {
             "result": {
-              "duration": 303604,
+              "duration": 1622037,
               "status": "passed"
             },
             "line": 26,
-            "name": "an error message saying \"Missing details\" is provided",
+            "name": "an error message \"invalid user details\" is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "Missing details",
-                  "offset": 25
+                  "val": "invalid user details",
+                  "offset": 18
                 }
               ],
-              "location": "AddUserSteps.an_error_message_saying_is_provided(String)"
+              "location": "AddUserSteps.an_error_message_is_displayed(String)"
             },
             "keyword": "Then "
           }

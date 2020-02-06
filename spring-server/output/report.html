@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 22, 2020 03:27:39 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 5, 2020 11:20:42 AM</span>
 				</a>
 			</li>
 			<li>
@@ -164,7 +164,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -184,12 +184,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Add a new user</span>
-						<span class='test-time'>Jan 22, 2020 03:27:39 PM</span>
+						<span class='test-time'>Feb 5, 2020 11:20:42 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 2s+145ms</span>
+	<span class='duration right label'>0h 0m 2s+265ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">add a User with valid details</span>
@@ -214,30 +214,26 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When the Admin User provides details like firstname as "SS5", lastname as "SS5" and department as "finance"</span>
-							<div class='pre'>{"id":0,"firstName":"firstName","lastName":"lastName","department":"department"}</div>
+						<span class="bdd-step-name">When the Admin User provides details like firstname as "Michael", lastname as "Jackson" and department as "Finance"</span>
+							<div class='pre'>{"id":123,"firstName":"Michael","lastName":"Jackson","department":"Finance"}</div>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then a User is created</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='8' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And a message saying "User successfully created" is provided</span>
+						<span class="bdd-step-name">Then a User with name "Michael" is created successfully</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenariooutline node' test-id='9' status='pass'>
-	<span class='duration right label'>0h 0m 0s+34ms</span>
+<div class='scenariooutline node' test-id='8' status='pass'>
+	<span class='duration right label'>0h 0m 0s+43ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">add a User with invalid details</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='10' class='node scenario pass' status='pass'>
+		<li test-id='9' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@negative</span>
 			</div>
@@ -247,21 +243,21 @@
 			<span class="bdd-step-name">add a User with invalid details</span>
 			
 				<ul class='steps'>
-					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='10' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given the Admin User is registered with the bank</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+					<li test-id='11' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And has access for adding new User</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='13' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When the Admin User provides details like firstname as "SS5", lastname as "null" and department as "HR"</span>
+					<li test-id='12' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When the Admin User provides details like firstname as "Jonathan", lastname as "null" and department as "HR"</span>
 							<div class='pre'></div>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then an error message saying "Missing details" is provided</span>
+					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then an error message "invalid user details" is displayed</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -345,7 +341,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 22, 2020 03:27:39 PM</td>
+										<td>Feb 5, 2020 11:20:42 AM</td>
 										<td class='linked' test-id='3'>Add a new user.add a User with valid details.add a User with valid details</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -379,8 +375,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 22, 2020 03:27:41 PM</td>
-										<td class='linked' test-id='10'>Add a new user.add a User with invalid details.add a User with invalid details</td>
+										<td>Feb 5, 2020 11:20:44 AM</td>
+										<td class='linked' test-id='9'>Add a new user.add a User with invalid details.add a User with invalid details</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -421,25 +417,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 22, 2020 03:27:39 PM</div>
+					<div class='panel-lead'>Feb 5, 2020 11:20:42 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 22, 2020 03:27:41 PM</div>
+			 		<div class='panel-lead'>Feb 5, 2020 11:20:45 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>2,388ms</div>
+					<div class='panel-lead'>2,500ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -502,7 +498,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 9,
+				passGrandChild: 8,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

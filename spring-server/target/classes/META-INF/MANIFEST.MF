@@ -3,7 +3,7 @@ Implementation-Title: swagger-spring-bdd-demo
 Implementation-Version: 1.0.1
 Built-By: sounsaha
 Implementation-Vendor-Id: io.swagger
-Build-Jdk: 1.8.0_241
+Build-Jdk: 1.8.0_221
 Implementation-URL: http://projects.spring.io/spring-boot/swagger-spri
  ng-bdd-demo/
 Created-By: Maven Integration for Eclipse

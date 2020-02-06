@@ -51,13 +51,8 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "a User is created",
+  "name": "a User with name \"\u003cfirstname\u003e\" is created successfully",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "a message saying \"User successfully created\" is provided",
-  "keyword": "And "
 });
 formatter.examples({
   "line": 17,
@@ -76,9 +71,9 @@ formatter.examples({
     },
     {
       "cells": [
-        "SS5",
-        "SS5",
-        "finance"
+        "Michael",
+        "Jackson",
+        "Finance"
       ],
       "line": 19,
       "id": "add-a-new-user;add-a-user-with-valid-details;;2"
@@ -87,7 +82,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 358895589,
+  "duration": 318540942,
   "status": "passed"
 });
 formatter.scenario({
@@ -116,7 +111,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "the Admin User provides details like firstname as \"SS5\", lastname as \"SS5\" and department as \"finance\"",
+  "name": "the Admin User provides details like firstname as \"Michael\", lastname as \"Jackson\" and department as \"Finance\"",
   "matchedColumns": [
     0,
     1,
@@ -126,67 +121,58 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "a User is created",
+  "name": "a User with name \"Michael\" is created successfully",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "a message saying \"User successfully created\" is provided",
-  "keyword": "And "
 });
 formatter.match({
   "location": "AddUserSteps.the_Admin_User_is_registered_with_the_bank()"
 });
 formatter.result({
-  "duration": 104174314,
+  "duration": 75607735,
   "status": "passed"
 });
 formatter.match({
   "location": "AddUserSteps.has_access_for_adding_new_User()"
 });
 formatter.result({
-  "duration": 65587,
+  "duration": 51482,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "SS5",
+      "val": "Michael",
       "offset": 51
     },
     {
-      "val": "SS5",
-      "offset": 70
+      "val": "Jackson",
+      "offset": 74
     },
     {
-      "val": "finance",
-      "offset": 94
+      "val": "Finance",
+      "offset": 102
     }
   ],
   "location": "AddUserSteps.the_Admin_User_provides_details_like_firstname_as_lastname_as_and_department_as(String,String,String)"
 });
 formatter.result({
-  "duration": 1561838601,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AddUserSteps.a_User_is_created()"
-});
-formatter.result({
-  "duration": 26716724,
+  "duration": 1427314753,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "User successfully created",
+      "val": "Michael",
       "offset": 18
     }
   ],
-  "location": "AddUserSteps.a_message_saying_is_provided(String)"
+  "location": "AddUserSteps.a_User_with_name_is_created_successfully(String)"
 });
 formatter.result({
-  "duration": 617785,
+  "duration": 361457929,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -220,7 +206,7 @@ formatter.step({
 });
 formatter.step({
   "line": 26,
-  "name": "an error message saying \"Missing details\" is provided",
+  "name": "an error message \"invalid user details\" is displayed",
   "keyword": "Then "
 });
 formatter.examples({
@@ -240,7 +226,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "SS5",
+        "Jonathan",
         "null",
         "HR"
       ],
@@ -251,7 +237,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 238721,
+  "duration": 324407,
   "status": "passed"
 });
 formatter.scenario({
@@ -280,7 +266,7 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
-  "name": "the Admin User provides details like firstname as \"SS5\", lastname as \"null\" and department as \"HR\"",
+  "name": "the Admin User provides details like firstname as \"Jonathan\", lastname as \"null\" and department as \"HR\"",
   "matchedColumns": [
     0,
     1,
@@ -290,55 +276,55 @@ formatter.step({
 });
 formatter.step({
   "line": 26,
-  "name": "an error message saying \"Missing details\" is provided",
+  "name": "an error message \"invalid user details\" is displayed",
   "keyword": "Then "
 });
 formatter.match({
   "location": "AddUserSteps.the_Admin_User_is_registered_with_the_bank()"
 });
 formatter.result({
-  "duration": 51835,
+  "duration": 74049,
   "status": "passed"
 });
 formatter.match({
   "location": "AddUserSteps.has_access_for_adding_new_User()"
 });
 formatter.result({
-  "duration": 32441,
+  "duration": 44782,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "SS5",
+      "val": "Jonathan",
       "offset": 51
     },
     {
       "val": "null",
-      "offset": 70
+      "offset": 75
     },
     {
       "val": "HR",
-      "offset": 95
+      "offset": 100
     }
   ],
   "location": "AddUserSteps.the_Admin_User_provides_details_like_firstname_as_lastname_as_and_department_as(String,String,String)"
 });
 formatter.result({
-  "duration": 24732549,
+  "duration": 29629329,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Missing details",
-      "offset": 25
+      "val": "invalid user details",
+      "offset": 18
     }
   ],
-  "location": "AddUserSteps.an_error_message_saying_is_provided(String)"
+  "location": "AddUserSteps.an_error_message_is_displayed(String)"
 });
 formatter.result({
-  "duration": 303604,
+  "duration": 1622037,
   "status": "passed"
 });
 });

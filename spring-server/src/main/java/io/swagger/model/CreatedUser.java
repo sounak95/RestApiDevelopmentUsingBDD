@@ -28,6 +28,9 @@ public class CreatedUser   {
 
   @JsonProperty("department")
   private String department = null;
+  
+//  @JsonProperty("message")
+//  private String message = null;
 
   public CreatedUser id(Integer id) {
     this.id = id;

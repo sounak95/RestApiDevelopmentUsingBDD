@@ -18,5 +18,4 @@ public class resources {
 		return payload;
 	}
 	
-	
 }

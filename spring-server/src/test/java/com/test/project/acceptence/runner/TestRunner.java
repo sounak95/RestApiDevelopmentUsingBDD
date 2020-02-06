@@ -28,5 +28,4 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "//src//test//java//com//test//project//acceptence//utils//ReportsConfig.xml"));
 		ReusableMethods.copyLatestExtentReport();
 	}
-	
 }

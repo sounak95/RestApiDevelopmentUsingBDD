@@ -55,7 +55,7 @@ public class RestAssuredHelper extends Objects {
         js= new JsonPath(res.asString());
     }
 
-    public static void validateRequestStatus(int iStatus)
+    public static void validateResponseStatus(int iStatus)
     {
         res.then()
         .statusCode(iStatus);

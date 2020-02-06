@@ -3,6 +3,9 @@ package io.swagger.api;
 import io.swagger.model.AddUserRequest;
 import io.swagger.model.CreatedUser;
 import io.swagger.model.Error;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
@@ -39,7 +42,7 @@ public class AddAnUserApiController implements AddAnUserApi {
 		this.request = request;
 	}
 
-	public ResponseEntity<CreatedUser> addUserRequest(@ApiParam(value = "Add User"  )  @Valid @RequestBody AddUserRequest addUserRequest) {
+	public ResponseEntity<CreatedUser> addUserRequest(@ApiParam(value = "Add User"  )  @Valid @RequestBody AddUserRequest addUserRequest)  {
 		String accept = request.getHeader("Accept");
 		
 		if(addUserRequest.toString().contains("null"))
@@ -47,13 +50,14 @@ public class AddAnUserApiController implements AddAnUserApi {
 		
 		if (accept != null && accept.contains("application/json")) {
             try {
-                return new ResponseEntity<CreatedUser>(objectMapper.readValue("{  \"firstName\" : \"firstName\",  \"lastName\" : \"lastName\",  \"id\" : 0,  \"department\" : \"department\"}", CreatedUser.class), HttpStatus.CREATED);
+                return new ResponseEntity<CreatedUser>(objectMapper.readValue("{  \"firstName\" : \"Michael\",  \"lastName\" : \"Jackson\",  \"id\" : 123,  \"department\" : \"Finance\"}", CreatedUser.class), HttpStatus.CREATED);
             } catch (IOException e) {
                 log.error("Couldn't serialize response for content type application/json", e);
                 return new ResponseEntity<CreatedUser>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
         }
-
+		
+	
 		return new ResponseEntity<CreatedUser>(HttpStatus.NOT_IMPLEMENTED);
 	}
 
